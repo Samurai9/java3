@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+.start{
+    margin-bottom: 10px;
+}
+.img-container{
+    position: relative;
+    height: 700px;
+}
+#object{
+    width: 100px;
+    height: 100px;
+}
+#img-containerID{
+    position: relative;
+}

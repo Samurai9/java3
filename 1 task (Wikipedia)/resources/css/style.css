@@ -1,0 +1,120 @@
+
+.main{
+	display: flex;
+	flex-direction: row;
+}
+
+.header{
+	display: flex;
+	width: 29%;
+	flex-direction: column;
+	float: left;
+	background: rgb(246, 246, 246);
+	border-right: 2px solid rgb(167, 215, 249);
+}
+
+.categories{
+	display: flex;
+	align-items: center;
+	border: 1px solid;
+	background: rgb(240,240,240);
+	height: 30px;
+	margin-bottom: 20px; 
+	line-height: 10px;
+}
+
+.content{
+	width: 20%;
+	background: rgb(240,240,240);
+	border: 1px solid;
+}
+
+.content-list{
+	margin: 10px;
+	padding-left: 15px;
+}
+.rigth-menu{
+	display: flex;
+	flex-direction: column;
+	margin-left: 1%;
+	background: white;
+
+}
+
+.upper-menu{
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row-reverse;
+}
+.upper-menu-button{
+	margin-right: 6px;
+	margin-left: 6px; 
+	font-size: 15px; 
+}
+
+.home-page{
+	display: flex;
+	flex-direction: column;
+}
+.header-list{
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+.middle-menu{
+	display: flex;
+	justify-content: flex-end;
+
+}
+
+.footer{
+	border-top: 2px solid rgb(167, 215, 249);
+	font-size: 15px;
+	background: rgb(246,246,246);
+}
+.footer-info{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	line-height: 10px;
+}
+
+.base-text{
+	margin-left: 10px; 
+}
+
+.layout1{
+	color: rgb(84, 89, 93);
+}
+.sign{
+	float: right;
+	border: 2px solid rgb(200, 200, 200);
+	padding: 1px;
+	margin: 1px 1px 5px 5px;
+	background: #f0f0f0;
+}
+.sign figcaption{
+	margin: 0 5px 5px;
+}
+.see_also_list{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 100px;
+}
+.stones-in-constructions{
+	margin-bottom: 110px; 
+}
+a{
+	text-decoration: none;
+	color: rgb(6,69,173);
+}
+a:hover{
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px){
+	.header{
+		display: none;
+	}
+}

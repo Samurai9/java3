@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Новости Нефтекамска</title>
+	<meta charset="utf-8" lang="ru">
+
+
+	<script src="./resources/js/jquery-3.5.1.min.js"></script>
+	<script src="./resources/js/popper.min.js"></script>
+	<script src="./resources/js/bootstrap.min.js"></script>
+	<script src="./resources/js/scrolling.js"></script>
+	<script src="./resources/js/color.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="./resources/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./resources/css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="header__container">
+			<div class="header__logo">
+				<img src="./resources/img/logo.png" id="header__logo">
+			</div>
+			<div class="header__tel">
+				<a href="tel:88005553535">
+					<span class="header__text">
+						8 (800) 555-35-35
+					</span>
+				</a>
+			</div>
+			<div class="header__email" align="center">
+				<a href="#">
+					<span class="header__text">
+						neftekams.news@rb.ru
+					</span>
+				</a>
+			</div>
+			<div class="header__support">
+				<a href="https://vk.com/erk_nsblln">
+					<span class="header__text">
+						Поддержка
+					</span>
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<nav class="navigation">
+		<ul class="nav nav-pills nav-fill" id="nav__id">
+			<li class="nav-item">
+				<a class="nav-link" href="#gallery__link">Галерея</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#news__link">Новости</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#administration__link">Администрация Нефтекамска</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#about__site__link">О сайте</a>
+			</li>
+		</ul>
+	</nav>
+
+	<hr color="blue" size="10px">
+
+	<div class="alert alert-warning" role="alert" align="center">
+		<h2>Внимание!</h2>
+		<h3>В районе Арлан отключение воды с 21.09 по 01.10</h3>
+	</div>
+
+	<hr color="blue" size="10px">
+
+	<div id="gallery__link" align="center">
+		<h1>
+			Галерея
+		</h1>
+	</div>
+	<br>
+
+
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="./resources/img/first-slide.jpg" class="d-block w-100">
+			</div>
+			<div class="carousel-item">
+				<img src="./resources/img/second-slide.jpg" class="d-block w-100">
+			</div>
+			<div class="carousel-item">
+				<img src="./resources/img/third-slide.jpg" class="d-block w-100">
+			</div>
+			<div class="carousel-item">
+				<img src="./resources/img/mer.jpg" class="d-block w-100">
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+
+	<hr color="blue" size="10px">
+
+	<div id="news__link" align="center">
+		<h1>
+			Новости
+		</h1>
+	</div>
+
+	<div class="input-group" id="news__search" align="center">
+		<input type="text" class="form-control" placeholder="Поиск по новостям...">
+		<span class="input-group-btn">
+			<button class="btn btn-info" type="button" id="search__button">
+				<i class="glyphicon glyphicon-search">Поиск</i>
+			</button>
+		</span>
+	</div>
+
+
+	<br>
+
+	<div class="news">
+		<div class="card" style="width: 18rem;" align="center">
+			<img src="./resources/img/fsb.png" class="card-img-top">
+			<div class="card-body d-flex flex-column" align="center">
+				<h5 class="card-title">ФСБ задержала жителя Нефтекамска за подготовку теракта</h5>
+				<p class="card-text">Сотрудники ФСБ задержали жителя башкирского города Нефтекамска по подозрению в
+					подготовке теракта, сообщает региональное управление ведомства.</p>
+					<br>
+				<p class="date">13:29 11.08.2020</p>
+				<a href="#" class="btn btn-primary mt-auto">Читать полностью</a>
+
+			</div>
+		</div>
+
+		<div class="card" style="width: 18rem;" align="center">
+			<img src="./resources/img/fsb-trun.jpg" class="card-img-top">
+			<div class="card-body d-flex flex-column" align="center">
+				<h5 class="card-title">Жителя Нефтекамска допросили после попытки теракта</h5>
+				<p class="card-text">Житель Нефтекамска, задержанный за подготовку к теракту, заявил на допросе, что
+					хотел закидать "коктейлями Молотова" здания мэрии и генерирующей компании из-за "ненависти к
+					режиму"...</p>
+				<p class="card__date">14:53 11.08.2020</p>
+				<a href="#" class="btn btn-primary mt-auto">Читать полностью</a>
+			</div>
+		</div>
+
+		<div class="card" style="width: 18rem;" align="center">
+			<img src="./resources/img/riba.png" class="card-img-top">
+			<div class="card-body d-flex flex-column" align="center">
+				<h5 class="card-title">Рыбных дел мастер. Как бизнесмен Черненко накормил рыбой Нефтекамск</h5>
+				<p class="card-text">Наши эксперты сами в шоке от того, какую работу им предлагают. "За такие деньги я
+					работать не буду!" - сказал наш эксперт и покинул съемочную площадку</p>
+				<p class="card__date">11 декабря 2019</p>
+				<a href="#" class="btn btn-primary mt-auto">Читать полностью</a>
+			</div>
+		</div>
+
+		<div class="card" style="width: 18rem;" align="center">
+			<img src="./resources/img/first-aid.png" class="card-img-top">
+			<div class="card-body d-flex flex-column" align="center">
+				<h5 class="card-title">Житель Нефтекамска сбил на дороге пять детей</h5>
+				<p class="card-text">Житель башкирского Нефтекамска за рулем иномарки сбил пятерых детей, которые шли по
+					дороге, в результате три девочки госпитализированы, сообщает ГИБДД по региону.</p>
+					<br>
+				<p class="card__date">29 ноября 2019, 22:22</p>
+				<a href="#" class="btn btn-primary mt-auto">Читать полностью</a>
+			</div>
+		</div>
+
+		<div class="card" style="width: 18rem;" align="center">
+			<img src="./resources/img/mechta-Lehi.png" class="card-img-top">
+			<div class="card-body d-flex flex-column" align="center">
+				<h5 class="card-title">В Нефтекамске осуждена женщина за применение насилия в отношении полицейских</h5>
+				<p class="card-text">В Нефтекамске осуждена женщина за применение насилия в отношении полицейских.</p>
+				<p class="card__date">Час назад</p>
+				<a href="#" class="btn btn-primary mt-auto">Читать полностью</a>
+			</div>
+		</div>
+
+		<div class="card" style="width: 18rem;" align="center">
+			<img src="./resources/img/kto-eto.png" class="card-img-top">
+			<div class="card-body d-flex flex-column" align="center">
+				<h5 class="card-title">Еще одна очень инетерсная и полезная новость</h5>
+				<p class="card-text">Каждый день в Нефтекамске происходит что-то интересное, так давайте вместе
+					разберемся
+					что приготовил для нас сегодняшний день</p>
+				<p class="card__date">Вова, пожалуйста, не забудь поставить дату, это очень важно</p>
+				<a href="#" class="btn btn-primary mt-auto">Читать полностью</a>
+			</div>
+		</div>
+
+		<div class="card" style="width: 18rem;" align="center">
+			<img src="./resources/img/panda-sleep.jpg" class="card-img-top">
+			<div class="card-body d-flex flex-column" align="center">
+				<h5 class="card-title">Сегодня днем панда наелась и пошла спать.</h5>
+				<p class="card-text">"Зачем нам все эти новости, посмотрите как мило она спит!" - прокомментировал наш
+					эксперт, и мы с ним абсолютно согласны!</p>
+					<br>
+				<p class="card__date">Сегодня днем</p>
+				<a href="#" class="btn btn-primary mt-auto">Читать полностью</a>
+			</div>
+		</div>
+	</div>
+	<div class="news__all">
+		<a href="#">Смотреть все новости</a>
+	</div>
+
+	<hr color="blue" size="10px">
+
+
+	<div id="administration__link" align="center">
+		<h1>
+			Администрация Нефтекамска
+		</h1>
+	</div>
+	<div class="administration">
+		<div class="administration__img" align="center">
+			<img src="./resources/img/administration.jpg" id="administration__img">
+		</div>
+		<ul class="administration__ul">
+			<li>
+				<b>Адрес: </b> пр-т. Комсомольский, 25, 452683
+			</li>
+			<li>
+				<b>Телефон: </b><a href="tel:83478343209">8 (347) 834-32-09</a>
+			</li>
+			<li>
+				<b>Время работы: </b>с 08:00 до 18:00, 16:00-16:15 технический перерыв, сб и вс выходной
+			</li>
+			<li>
+				<b>Электронная почта: </b> *тут должна быть почта, но я ее не нашел* (не то чтоб прям усиленно искал, но
+				все же)
+			</li>
+		</ul>
+	</div>
+	<hr color="blue" size="10px">
+
+
+
+	<div id="about__site__link" align="center">
+		<h1>
+			О сайте
+		</h1>
+	</div>
+
+	<div class="about__site">
+		<p>Тут очень важная информация о сайте и разработчиках (кто мы то? я здесь один), как поддержать (киньте денег
+			на пельмени плез, номер карточки скину в лс) </p>
+		<p>Вот, тут есть вк, инстаграм, лицокнига, смарите как красиво</p>
+
+		<div class="about__site__icons" align="center">
+			<p align="center">Следите за новостями:</p>
+			<div class="icon" id="vk__icon">
+				<a href="https://vk.com">VK</a>
+			</div>
+			<div class="icon" id="facebook__icon">
+				<a href="https://facebook.com">Facebook</a>
+			</div>
+			<div class="icon" id="instagram__icon">
+				<a href="https://instagram.com">Instagram</a>
+			</div>
+			<div class="icon" id="youtube__icon">
+				<a href="https://youtube.com">Youtube</a>
+			</div>
+		</div>
+	</div>
+
+	<hr size="5px" color="blue">
+
+	<div class="change__color" align="center">
+		<p class="change__color__text">Если вам мало существующего функционала, то можете поменять цветовую схему:</p>
+	</div>
+
+	<div class="change__color__buttons">
+		<div class="blue">
+			<input class="btn btn-primary" type="button" value="Синий" OnClick="changeColorToBlue()">
+		</div>
+		<div class="orange">
+			<input class="btn btn-primary" type="button" value="Оранжевый" OnClick="changeColorToOrange()">
+		</div>
+		<div class="green">
+			<input class="btn btn-primary" type="button" value="Зеленый" OnClick="changeColorToGreen()">
+		</div>
+		<div class="color__container">
+			<div class="consistently">
+				<input class="btn btn-primary" type="button" value="Последовательно менять цвета"
+					OnClick="changeColorConsistently()" id="change__color__button">
+			</div>
+			<div class="stopConsistently" align="center">
+				<input class="btn btn-primary" type="button" value="Остановить смену цветов"
+					OnClick="stopChangingConsistently()">
+			</div>
+		</div>
+	</div>
+
+
+	<footer>
+		<div class="footer__text" align="center">
+			<span>Все права защищены, индивидуальный предприниматель Э.И.Насибуллин, копирование и использование в каких
+				либо целях запрещено, только если за баночку адреналин раш 0.5</span>
+		</div>
+	</footer>
+</body>
+
+</html>
